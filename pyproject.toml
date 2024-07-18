@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "example-packaging-zkatz"
-version = "0.1.1"
+dynamic = ["version"]
 dependencies = [
   "numpy"
 ]
@@ -20,7 +20,6 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Private :: Do Not Upload",
 ]
 
 [project.optional-dependencies]
@@ -29,3 +28,6 @@ test = ["pytest"]
 [project.urls]
 "Homepage" = "https://zsk4.github.io/example-packaging-zkatz"
 "Source Code" = "https://github.com/zkatz/example-packaging-zkatz"
+
+[tool.hatch]
+version.path = "src/example_packaging_zkatz/__init__.py"

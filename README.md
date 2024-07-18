@@ -1,2 +1,2 @@
-## example-packaging-zkatz
+# example-packaging-zkatz
 Test Package for Intersect
